@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vamsi Shesamsetti – Resume</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Calibri', 'Segoe UI', Arial, sans-serif; font-size: 10.5pt; color: #1a1a1a; background: #fff; line-height: 1.45; }
+    @page { margin: 0.65in 0.6in; size: letter; }
+    @media print { body { print-color-adjust: exact; -webkit-print-color-adjust: exact; } .no-print { display: none; } }
+
+    .container { max-width: 780px; margin: 0 auto; padding: 28px 0; }
+
+    /* Header */
+    .header { text-align: center; padding-bottom: 10px; border-bottom: 2px solid #2563EB; margin-bottom: 12px; }
+    .name { font-size: 24pt; font-weight: 700; color: #111; letter-spacing: 0.3px; }
+    .tagline { font-size: 11pt; color: #2563EB; font-weight: 600; margin-top: 1px; }
+    .contact { font-size: 9pt; color: #4B5563; margin-top: 5px; }
+    .contact a { color: #2563EB; text-decoration: none; }
+    .contact span { margin: 0 5px; color: #9CA3AF; }
+
+    /* Section */
+    .section { margin-top: 11px; }
+    .section-title { font-size: 10pt; font-weight: 700; color: #2563EB; text-transform: uppercase; letter-spacing: 0.8px; border-bottom: 1px solid #BFDBFE; padding-bottom: 2px; margin-bottom: 7px; }
+
+    /* Summary */
+    .summary { font-size: 10pt; color: #374151; line-height: 1.55; }
+
+    /* Skills */
+    .skills-grid { display: flex; flex-direction: column; gap: 3px; }
+    .skill-row { display: flex; gap: 6px; font-size: 10pt; }
+    .skill-cat { font-weight: 700; color: #111; min-width: 110px; }
+    .skill-list { color: #374151; }
+
+    /* Item (project / experience) */
+    .item { margin-bottom: 9px; }
+    .item-header { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+    .item-title { font-weight: 700; font-size: 10.5pt; color: #111; }
+    .item-org { font-size: 10pt; color: #4B5563; }
+    .item-date { font-size: 9pt; color: #6B7280; white-space: nowrap; flex-shrink: 0; }
+    .item-tech { font-size: 9pt; color: #2563EB; font-style: italic; margin-top: 1px; }
+    .item-links { font-size: 9pt; color: #6B7280; }
+    .item-links a { color: #2563EB; text-decoration: none; }
+    ul.bullets { padding-left: 14px; margin-top: 3px; }
+    ul.bullets li { font-size: 10pt; color: #374151; margin-bottom: 2px; }
+
+    /* Education */
+    .edu-gpa { font-weight: 600; color: #374151; }
+    .edu-courses { font-size: 9.5pt; color: #6B7280; }
+
+    /* Print button */
+    .print-btn { display: block; text-align: center; margin: 20px auto; padding: 10px 28px; background: #2563EB; color: #fff; border: none; border-radius: 8px; font-size: 13px; cursor: pointer; font-family: inherit; }
+    .print-btn:hover { background: #1d4ed8; }
+  </style>
+</head>
+<body>
+<div class="no-print" style="background:#f0f4ff;padding:12px;text-align:center;font-family:sans-serif;font-size:13px;color:#374151;">
+  <strong>Tip:</strong> Open browser Print dialog (Ctrl/Cmd + P) → Save as PDF to download.
+  <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+</div>
+
+<div class="container">
+  <!-- HEADER -->
+  <div class="header">
+    <div class="name">VAMSI SHESAMSETTI</div>
+    <div class="tagline">Full-Stack Developer | Cloud Engineer</div>
+    <div class="contact">
+      Delray Beach, FL <span>|</span>
+      +1 (728) 880-9390 <span>|</span>
+      <a href="mailto:shesamsettivamsi11@gmail.com">shesamsettivamsi11@gmail.com</a> <span>|</span>
+      <a href="https://linkedin.com/in/vamsishesamsetti">linkedin.com/in/vamsishesamsetti</a> <span>|</span>
+      <a href="https://github.com/vamsishesamsetti">github.com/vamsishesamsetti</a>
+    </div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="section">
+    <div class="section-title">Professional Summary</div>
+    <p class="summary">
+      Full-stack developer with an M.S. in Computer Science from Florida Atlantic University (GPA 3.9/4.0, May 2026)
+      and 4 cloud certifications spanning AWS and GCP. Experienced building and deploying production-grade web
+      applications using React, Node.js, Python/Flask, Prisma ORM, and PostgreSQL/MySQL. Proven ability to ship
+      applications with JWT authentication, AES-256 encryption, Kanban dashboards, REST API design, and cloud
+      infrastructure (AWS Lambda, S3, EC2, Cloudinary). Seeking a software engineering role where strong
+      fundamentals and cloud-native skills create real product impact.
+    </p>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-grid">
+      <div class="skill-row"><span class="skill-cat">Languages:</span><span class="skill-list">JavaScript, Python, Java, C++</span></div>
+      <div class="skill-row"><span class="skill-cat">Frontend:</span><span class="skill-list">React.js (Vite), Tailwind CSS, HTML5, CSS3, React Router, Context API, Custom Hooks</span></div>
+      <div class="skill-row"><span class="skill-cat">Backend:</span><span class="skill-list">Node.js, Express.js, Prisma ORM, Python Flask, Django, REST API Design, JWT Auth, bcrypt</span></div>
+      <div class="skill-row"><span class="skill-cat">Databases:</span><span class="skill-list">PostgreSQL, MySQL, DynamoDB</span></div>
+      <div class="skill-row"><span class="skill-cat">Cloud &amp; DevOps:</span><span class="skill-list">AWS (Lambda, S3, EC2, DynamoDB, IAM, CloudWatch), GCP, Vercel, Render, Railway, Cloudinary</span></div>
+      <div class="skill-row"><span class="skill-cat">Tools:</span><span class="skill-list">Git, GitHub Actions, Postman, Blue Prism, VS Code</span></div>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section">
+    <div class="section-title">Projects</div>
+
+    <div class="item">
+      <div class="item-header">
+        <div>
+          <span class="item-title">Job Tracker SaaS – Full-Stack Application Tracker</span>
+        </div>
+        <span class="item-date">2026</span>
+      </div>
+      <div class="item-tech">React, Node.js, Express, Prisma ORM, PostgreSQL, JWT, Cloudinary, Nodemailer</div>
+      <div class="item-links"><a href="https://job-tracker-saas.vercel.app">job-tracker-saas.vercel.app</a> · <a href="https://github.com/vamsishesamsetti/job-tracker-saas">github.com/vamsishesamsetti/job-tracker-saas</a></div>
+      <ul class="bullets">
+        <li>Architected a full-stack job tracker with React (Kanban board, analytics dashboard, StatusChart) and a Node.js/Express REST API backed by Prisma ORM + PostgreSQL.</li>
+        <li>Implemented bcrypt password hashing, JWT session management, role-based middleware, rate limiting, and admin panel for complete auth and access control.</li>
+        <li>Integrated Cloudinary for resume file upload/preview and Nodemailer for automated email notifications on job status updates.</li>
+        <li>Deployed frontend on Vercel and backend on Render; PostgreSQL via managed cloud database.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <div><span class="item-title">SmartBid – Secure Auction Platform</span></div>
+        <span class="item-date">2026</span>
+      </div>
+      <div class="item-tech">Python, Flask, MySQL, JWT, AES-256 Encryption, Railway, Render</div>
+      <div class="item-links"><a href="https://github.com/vamsishesamsetti/smartbid-auction">github.com/vamsishesamsetti/smartbid-auction</a></div>
+      <ul class="bullets">
+        <li>Developed a secure REST API auction platform in Flask with JWT authentication and AES-256 encrypted bid storage.</li>
+        <li>Designed MySQL schema with transactional updates and row-level locking to prevent race conditions in concurrent bidding.</li>
+        <li>Built auction lifecycle endpoints (create, list, bid, result) following REST semantics; deployed on Render with Railway-managed MySQL.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <div><span class="item-title">CricketPulse – Live Score &amp; Analytics App</span></div>
+        <span class="item-date">2026</span>
+      </div>
+      <div class="item-tech">React (Vite), Tailwind CSS, CricAPI, React Router, Vercel</div>
+      <div class="item-links"><a href="https://live-cricket-score-app.vercel.app">live-cricket-score-app.vercel.app</a> · <a href="https://github.com/vamsishesamsetti/live-cricket-score-app">github.com/vamsishesamsetti/live-cricket-score-app</a></div>
+      <ul class="bullets">
+        <li>Built a real-time cricket scoring platform with custom React hooks (useMatchDetails) and a utility-based match classification system.</li>
+        <li>Implemented persistent pinned matches (localStorage), skeleton loaders, and retry-based error UI for production-grade UX.</li>
+        <li>Fully responsive mobile-first design deployed on Vercel with secure environment variable configuration.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Professional Experience</div>
+
+    <div class="item">
+      <div class="item-header">
+        <div>
+          <span class="item-title">AWS Cloud Virtual Internship</span>
+          <span class="item-org"> | EduSkills (AICTE Approved)</span>
+        </div>
+        <span class="item-date">Mar – May 2022</span>
+      </div>
+      <ul class="bullets">
+        <li>Built and deployed serverless applications using AWS Lambda, S3, and DynamoDB.</li>
+        <li>Optimized cloud architecture for cost efficiency; implemented IAM-based least-privilege access controls.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <div>
+          <span class="item-title">RPA – Blue Prism Virtual Internship</span>
+          <span class="item-org"> | EduSkills (AICTE Approved)</span>
+        </div>
+        <span class="item-date">Oct – Dec 2021</span>
+      </div>
+      <ul class="bullets">
+        <li>Automated business workflows using Blue Prism, reducing manual processing time by 25%.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-title">Education</div>
+
+    <div class="item">
+      <div class="item-header">
+        <div>
+          <span class="item-title">M.S. in Computer Science</span>
+          <span class="item-org"> | Florida Atlantic University, Boca Raton, FL</span>
+        </div>
+        <span class="item-date">May 2026</span>
+      </div>
+      <div class="edu-gpa">GPA: 3.9 / 4.0</div>
+      <div class="edu-courses">Distributed Systems, Cloud Computing, Advanced Algorithms, Database Systems, Software Engineering</div>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <div>
+          <span class="item-title">B.Tech in Computer Science &amp; Engineering (Honors)</span>
+          <span class="item-org"> | KL University, Guntur, India</span>
+        </div>
+        <span class="item-date">April 2024</span>
+      </div>
+      <div class="edu-gpa">CGPA: 8.91 / 10.0</div>
+    </div>
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <div class="section">
+    <div class="section-title">Certifications</div>
+    <ul class="bullets">
+      <li>Google Cloud Certified Associate Cloud Engineer</li>
+      <li>AWS Certified Developer – Associate</li>
+      <li>AWS Certified Cloud Practitioner</li>
+      <li>Red Hat Certified Developer EX183</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

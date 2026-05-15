@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vamsi Shesamsetti – Cloud / DevOps Engineer Resume</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Calibri', 'Segoe UI', Arial, sans-serif; font-size: 10.5pt; color: #1a1a1a; background: #fff; line-height: 1.45; }
+    @page { margin: 0.65in 0.6in; size: letter; }
+    @media print { body { print-color-adjust: exact; -webkit-print-color-adjust: exact; } .no-print { display: none; } }
+    .container { max-width: 780px; margin: 0 auto; padding: 28px 0; }
+    .header { text-align: center; padding-bottom: 10px; border-bottom: 2px solid #2563EB; margin-bottom: 12px; }
+    .name { font-size: 24pt; font-weight: 700; color: #111; }
+    .tagline { font-size: 11pt; color: #2563EB; font-weight: 600; margin-top: 1px; }
+    .contact { font-size: 9pt; color: #4B5563; margin-top: 5px; }
+    .contact a { color: #2563EB; text-decoration: none; }
+    .contact span { margin: 0 5px; color: #9CA3AF; }
+    .section { margin-top: 11px; }
+    .section-title { font-size: 10pt; font-weight: 700; color: #2563EB; text-transform: uppercase; letter-spacing: 0.8px; border-bottom: 1px solid #BFDBFE; padding-bottom: 2px; margin-bottom: 7px; }
+    .summary { font-size: 10pt; color: #374151; line-height: 1.55; }
+    .skills-grid { display: flex; flex-direction: column; gap: 3px; }
+    .skill-row { display: flex; gap: 6px; font-size: 10pt; }
+    .skill-cat { font-weight: 700; color: #111; min-width: 120px; }
+    .skill-list { color: #374151; }
+    .cert-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 12px; }
+    .cert-item { font-size: 10pt; color: #374151; }
+    .cert-item::before { content: "✓ "; color: #2563EB; font-weight: 700; }
+    .item { margin-bottom: 9px; }
+    .item-header { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+    .item-title { font-weight: 700; font-size: 10.5pt; color: #111; }
+    .item-org { font-size: 10pt; color: #4B5563; }
+    .item-date { font-size: 9pt; color: #6B7280; white-space: nowrap; flex-shrink: 0; }
+    .item-tech { font-size: 9pt; color: #2563EB; font-style: italic; margin-top: 1px; }
+    .item-links { font-size: 9pt; color: #6B7280; }
+    .item-links a { color: #2563EB; text-decoration: none; }
+    ul.bullets { padding-left: 14px; margin-top: 3px; }
+    ul.bullets li { font-size: 10pt; color: #374151; margin-bottom: 2px; }
+    .edu-gpa { font-weight: 600; color: #374151; }
+    .edu-courses { font-size: 9.5pt; color: #6B7280; }
+    .print-btn { display: inline; padding: 6px 18px; font-size: 12px; margin: 0 0 0 10px; background: #2563EB; color: #fff; border: none; border-radius: 8px; cursor: pointer; font-family: inherit; }
+  </style>
+</head>
+<body>
+<div class="no-print" style="background:#f0f4ff;padding:12px;text-align:center;font-family:sans-serif;font-size:13px;color:#374151;">
+  <strong>Cloud / DevOps Engineer Resume</strong> — <button class="print-btn" onclick="window.print()">Save as PDF</button>
+</div>
+
+<div class="container">
+  <div class="header">
+    <div class="name">VAMSI SHESAMSETTI</div>
+    <div class="tagline">Cloud Engineer · AWS Certified Developer · GCP Associate Cloud Engineer · 4 Cloud Certs</div>
+    <div class="contact">
+      Delray Beach, FL <span>|</span>
+      +1 (728) 880-9390 <span>|</span>
+      <a href="mailto:shesamsettivamsi11@gmail.com">shesamsettivamsi11@gmail.com</a> <span>|</span>
+      <a href="https://linkedin.com/in/vamsishesamsetti">linkedin.com/in/vamsishesamsetti</a> <span>|</span>
+      <a href="https://github.com/vamsishesamsetti">github.com/vamsishesamsetti</a>
+    </div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="section">
+    <div class="section-title">Professional Summary</div>
+    <p class="summary">
+      Cloud engineer and full-stack developer with an M.S. in Computer Science from Florida Atlantic University
+      (GPA 3.9/4.0, May 2026) and 4 cloud certifications: AWS Certified Developer – Associate, AWS Certified
+      Cloud Practitioner, GCP Associate Cloud Engineer, and Red Hat Certified Developer EX183. Hands-on with
+      AWS Lambda, S3, EC2, DynamoDB, IAM/CloudWatch, and GCP. Deployed three production applications across
+      Vercel, Render, Railway, and Cloudinary with multi-cloud managed database architecture.
+    </p>
+  </div>
+
+  <!-- CERTIFICATIONS (featured prominently for cloud role) -->
+  <div class="section">
+    <div class="section-title">Cloud Certifications</div>
+    <div class="cert-grid">
+      <div class="cert-item">Google Cloud Certified Associate Cloud Engineer</div>
+      <div class="cert-item">AWS Certified Developer – Associate</div>
+      <div class="cert-item">AWS Certified Cloud Practitioner</div>
+      <div class="cert-item">Red Hat Certified Developer EX183</div>
+    </div>
+  </div>
+
+  <!-- SKILLS (cloud-first ordering) -->
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-grid">
+      <div class="skill-row"><span class="skill-cat">AWS Services:</span><span class="skill-list">Lambda (serverless), S3 (object storage), EC2 (compute), DynamoDB (NoSQL), IAM (least-privilege), CloudWatch (monitoring)</span></div>
+      <div class="skill-row"><span class="skill-cat">GCP:</span><span class="skill-list">Associate Cloud Engineer certified; cloud infrastructure management, compute, storage, IAM</span></div>
+      <div class="skill-row"><span class="skill-cat">Deployment:</span><span class="skill-list">Vercel (frontend CI/CD), Render (backend), Railway (managed DB), Cloudinary (CDN/media), GitHub Actions</span></div>
+      <div class="skill-row"><span class="skill-cat">Databases:</span><span class="skill-list">PostgreSQL (managed cloud), MySQL (Railway), DynamoDB; Prisma ORM migrations</span></div>
+      <div class="skill-row"><span class="skill-cat">Backend:</span><span class="skill-list">Node.js, Express.js, Python Flask, REST API Design, JWT Auth, bcrypt, rate limiting</span></div>
+      <div class="skill-row"><span class="skill-cat">Frontend:</span><span class="skill-list">React.js (Vite), Tailwind CSS, responsive design</span></div>
+      <div class="skill-row"><span class="skill-cat">Languages:</span><span class="skill-list">JavaScript, Python, Java, C++</span></div>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE (cloud internship first) -->
+  <div class="section">
+    <div class="section-title">Experience</div>
+    <div class="item">
+      <div class="item-header">
+        <div><span class="item-title">AWS Cloud Virtual Internship</span><span class="item-org"> | EduSkills (AICTE Approved)</span></div>
+        <span class="item-date">Mar – May 2022</span>
+      </div>
+      <ul class="bullets">
+        <li>Designed and deployed serverless applications using AWS Lambda (event-driven compute), S3 (object storage), and DynamoDB (NoSQL), following cloud-native architecture patterns.</li>
+        <li>Optimized cloud architecture for cost efficiency; implemented IAM policies enforcing least-privilege access across services.</li>
+        <li>Monitored application health and performance using AWS CloudWatch metrics and logging.</li>
+      </ul>
+    </div>
+    <div class="item">
+      <div class="item-header">
+        <div><span class="item-title">RPA – Blue Prism Virtual Internship</span><span class="item-org"> | EduSkills (AICTE Approved)</span></div>
+        <span class="item-date">Oct – Dec 2021</span>
+      </div>
+      <ul class="bullets">
+        <li>Automated business workflows using Blue Prism, reducing manual processing time by 25%; designed scalable RPA solutions for data-entry and reporting.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PROJECTS (cloud deployment focus) -->
+  <div class="section">
+    <div class="section-title">Projects – Cloud Architecture &amp; Deployment</div>
+
+    <div class="item">
+      <div class="item-header">
+        <div><span class="item-title">Job Tracker SaaS – Multi-Cloud Deployment</span></div>
+        <span class="item-date">2026</span>
+      </div>
+      <div class="item-tech">Vercel (frontend), Render (backend Node.js), Cloudinary (CDN/file storage), Managed PostgreSQL, Nodemailer</div>
+      <div class="item-links"><a href="https://job-tracker-saas.vercel.app">job-tracker-saas.vercel.app</a> · <a href="https://github.com/vamsishesamsetti/job-tracker-saas">github.com/vamsishesamsetti/job-tracker-saas</a></div>
+      <ul class="bullets">
+        <li>Architected a multi-cloud deployment: React frontend on Vercel (global CDN, CI/CD from GitHub), Node.js/Express backend on Render, PostgreSQL on managed cloud DB.</li>
+        <li>Integrated Cloudinary for scalable media/file storage (resume upload/preview) — decoupled from application server, zero disk dependency.</li>
+        <li>Configured secure environment variable management across Vercel and Render; zero secrets in version control.</li>
+        <li>Backend features: Prisma ORM migrations, JWT auth, role-based access, rate limiting, email service via Nodemailer.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <div><span class="item-title">SmartBid – Cloud-Deployed Secure Auction Platform</span></div>
+        <span class="item-date">2026</span>
+      </div>
+      <div class="item-tech">Render (backend Flask), Railway (managed MySQL), Python, AES-256, JWT</div>
+      <div class="item-links"><a href="https://github.com/vamsishesamsetti/smartbid-auction">github.com/vamsishesamsetti/smartbid-auction</a></div>
+      <ul class="bullets">
+        <li>Deployed Python/Flask backend on Render with Railway-managed MySQL — fully managed cloud database requiring zero self-hosted infrastructure.</li>
+        <li>Backend implements AES-256 encrypted bid storage, JWT authentication, and transactional MySQL to prevent race conditions.</li>
+        <li>Documented full API in Postman collection; Railway provides automated backups and connection pooling.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <div><span class="item-title">CricketPulse – Serverless Frontend Deployment</span></div>
+        <span class="item-date">2026</span>
+      </div>
+      <div class="item-tech">Vercel (global CDN + CI/CD), React (Vite), CricAPI</div>
+      <div class="item-links"><a href="https://live-cricket-score-app.vercel.app">live-cricket-score-app.vercel.app</a> · <a href="https://github.com/vamsishesamsetti/live-cricket-score-app">github.com/vamsishesamsetti/live-cricket-score-app</a></div>
+      <ul class="bullets">
+        <li>Deployed on Vercel with secure environment variable configuration (API keys not exposed to client); automatic preview deployments on every PR.</li>
+        <li>Real-time CricAPI integration with retry logic; mobile-first responsive React app with production-grade error handling.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="item">
+      <div class="item-header">
+        <div><span class="item-title">M.S. in Computer Science</span><span class="item-org"> | Florida Atlantic University, Boca Raton, FL</span></div>
+        <span class="item-date">May 2026</span>
+      </div>
+      <div class="edu-gpa">GPA: 3.9 / 4.0</div>
+      <div class="edu-courses">Cloud Computing, Distributed Systems, Advanced Algorithms, Database Systems, Software Engineering</div>
+    </div>
+    <div class="item">
+      <div class="item-header">
+        <div><span class="item-title">B.Tech in Computer Science &amp; Engineering (Honors)</span><span class="item-org"> | KL University, India</span></div>
+        <span class="item-date">April 2024</span>
+      </div>
+      <div class="edu-gpa">CGPA: 8.91 / 10.0</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vamsi Shesamsetti – Backend Engineer Resume</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Calibri', 'Segoe UI', Arial, sans-serif; font-size: 10.5pt; color: #1a1a1a; background: #fff; line-height: 1.45; }
+    @page { margin: 0.65in 0.6in; size: letter; }
+    @media print { body { print-color-adjust: exact; -webkit-print-color-adjust: exact; } .no-print { display: none; } }
+    .container { max-width: 780px; margin: 0 auto; padding: 28px 0; }
+    .header { text-align: center; padding-bottom: 10px; border-bottom: 2px solid #2563EB; margin-bottom: 12px; }
+    .name { font-size: 24pt; font-weight: 700; color: #111; }
+    .tagline { font-size: 11pt; color: #2563EB; font-weight: 600; margin-top: 1px; }
+    .contact { font-size: 9pt; color: #4B5563; margin-top: 5px; }
+    .contact a { color: #2563EB; text-decoration: none; }
+    .contact span { margin: 0 5px; color: #9CA3AF; }
+    .section { margin-top: 11px; }
+    .section-title { font-size: 10pt; font-weight: 700; color: #2563EB; text-transform: uppercase; letter-spacing: 0.8px; border-bottom: 1px solid #BFDBFE; padding-bottom: 2px; margin-bottom: 7px; }
+    .summary { font-size: 10pt; color: #374151; line-height: 1.55; }
+    .skills-grid { display: flex; flex-direction: column; gap: 3px; }
+    .skill-row { display: flex; gap: 6px; font-size: 10pt; }
+    .skill-cat { font-weight: 700; color: #111; min-width: 110px; }
+    .skill-list { color: #374151; }
+    .item { margin-bottom: 9px; }
+    .item-header { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+    .item-title { font-weight: 700; font-size: 10.5pt; color: #111; }
+    .item-org { font-size: 10pt; color: #4B5563; }
+    .item-date { font-size: 9pt; color: #6B7280; white-space: nowrap; flex-shrink: 0; }
+    .item-tech { font-size: 9pt; color: #2563EB; font-style: italic; margin-top: 1px; }
+    .item-links { font-size: 9pt; color: #6B7280; }
+    .item-links a { color: #2563EB; text-decoration: none; }
+    ul.bullets { padding-left: 14px; margin-top: 3px; }
+    ul.bullets li { font-size: 10pt; color: #374151; margin-bottom: 2px; }
+    .edu-gpa { font-weight: 600; color: #374151; }
+    .edu-courses { font-size: 9.5pt; color: #6B7280; }
+    .print-btn { display: inline; padding: 6px 18px; font-size: 12px; margin: 0 0 0 10px; background: #2563EB; color: #fff; border: none; border-radius: 8px; cursor: pointer; font-family: inherit; }
+  </style>
+</head>
+<body>
+<div class="no-print" style="background:#f0f4ff;padding:12px;text-align:center;font-family:sans-serif;font-size:13px;color:#374151;">
+  <strong>Backend Engineer Resume</strong> — <button class="print-btn" onclick="window.print()">Save as PDF</button>
+</div>
+
+<div class="container">
+  <div class="header">
+    <div class="name">VAMSI SHESAMSETTI</div>
+    <div class="tagline">Backend Developer · Node.js · Python/Flask · PostgreSQL · REST APIs · AWS</div>
+    <div class="contact">
+      Delray Beach, FL <span>|</span>
+      +1 (728) 880-9390 <span>|</span>
+      <a href="mailto:shesamsettivamsi11@gmail.com">shesamsettivamsi11@gmail.com</a> <span>|</span>
+      <a href="https://linkedin.com/in/vamsishesamsetti">linkedin.com/in/vamsishesamsetti</a> <span>|</span>
+      <a href="https://github.com/vamsishesamsetti">github.com/vamsishesamsetti</a>
+    </div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="section">
+    <div class="section-title">Professional Summary</div>
+    <p class="summary">
+      Backend developer with an M.S. in Computer Science from Florida Atlantic University (GPA 3.9/4.0, May 2026)
+      and deep expertise in REST API design, database architecture, and security engineering. Built production
+      APIs in both Node.js/Express (Prisma ORM, PostgreSQL, rate limiting, role-based access control) and
+      Python/Flask (AES-256 encryption, transactional MySQL, race condition prevention). 4 cloud certifications
+      spanning AWS and GCP; deployed backends on Render with AWS Lambda, DynamoDB, and IAM experience.
+    </p>
+  </div>
+
+  <!-- SKILLS (backend-first ordering) -->
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-grid">
+      <div class="skill-row"><span class="skill-cat">Backend:</span><span class="skill-list">Node.js, Express.js, Prisma ORM, Python Flask, Django, REST API Design, JWT Auth, bcrypt, Rate Limiting, Middleware Architecture</span></div>
+      <div class="skill-row"><span class="skill-cat">Databases:</span><span class="skill-list">PostgreSQL, MySQL (transactional, row-level locking), DynamoDB, schema design with foreign key constraints</span></div>
+      <div class="skill-row"><span class="skill-cat">Security:</span><span class="skill-list">AES-256 encryption, JWT, bcrypt, role-based access control, IAM least-privilege, input validation</span></div>
+      <div class="skill-row"><span class="skill-cat">Cloud:</span><span class="skill-list">AWS (Lambda, S3, EC2, DynamoDB, IAM, CloudWatch), GCP, Render, Railway, Cloudinary</span></div>
+      <div class="skill-row"><span class="skill-cat">Frontend:</span><span class="skill-list">React.js, Tailwind CSS, REST client integration</span></div>
+      <div class="skill-row"><span class="skill-cat">Languages:</span><span class="skill-list">JavaScript (Node.js), Python, Java, C++</span></div>
+      <div class="skill-row"><span class="skill-cat">Tools:</span><span class="skill-list">Git, Postman, GitHub Actions, VS Code</span></div>
+    </div>
+  </div>
+
+  <!-- PROJECTS (backend-first) -->
+  <div class="section">
+    <div class="section-title">Projects</div>
+
+    <div class="item">
+      <div class="item-header">
+        <div><span class="item-title">SmartBid – Secure Auction Platform</span></div>
+        <span class="item-date">2026</span>
+      </div>
+      <div class="item-tech">Python, Flask, Flask-SQLAlchemy, MySQL, PyJWT, AES-256 (cryptography), bcrypt, Flask-Cors | Railway + Render</div>
+      <div class="item-links"><a href="https://github.com/vamsishesamsetti/smartbid-auction">github.com/vamsishesamsetti/smartbid-auction</a></div>
+      <ul class="bullets">
+        <li>Developed a secure REST API auction platform with AES-256 encrypted bid storage, JWT authentication, and bcrypt password hashing — no plaintext sensitive data at rest.</li>
+        <li>Engineered transactional MySQL bid updates with row-level locking to prevent race conditions under concurrent bidding, ensuring data consistency.</li>
+        <li>Designed relational MySQL schema (Flask-SQLAlchemy) with foreign key constraints; built full auction lifecycle endpoints (create, list, bid, result) following strict REST semantics.</li>
+        <li>Deployed on Render with Railway-managed MySQL; documented complete API in Postman collection.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <div><span class="item-title">Job Tracker SaaS – REST API &amp; Backend Architecture</span></div>
+        <span class="item-date">2026</span>
+      </div>
+      <div class="item-tech">Node.js, Express.js, Prisma ORM, PostgreSQL, JWT, bcrypt, Nodemailer, Cloudinary, rate-limiter | Render</div>
+      <div class="item-links"><a href="https://job-tracker-saas.vercel.app">job-tracker-saas.vercel.app</a> · <a href="https://github.com/vamsishesamsetti/job-tracker-saas">github.com/vamsishesamsetti/job-tracker-saas</a></div>
+      <ul class="bullets">
+        <li>Architected a Node.js/Express REST API with Prisma ORM + PostgreSQL, covering auth routes, job CRUD, dashboard analytics, file uploads, and admin management.</li>
+        <li>Implemented layered middleware: JWT auth, bcrypt password security, role-based access control, rate limiting, input validation, and centralized error handling.</li>
+        <li>Integrated Cloudinary (multipart file uploads for resumes) and Nodemailer (email notifications); designed PostgreSQL schema via Prisma migrations with foreign key constraints.</li>
+        <li>Deployed on Render; frontend on Vercel — zero-downtime, stateless API design.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <div><span class="item-title">CricketPulse – Real-Time Data Integration</span></div>
+        <span class="item-date">2026</span>
+      </div>
+      <div class="item-tech">React (Vite), CricAPI (REST), Vercel</div>
+      <div class="item-links"><a href="https://live-cricket-score-app.vercel.app">live-cricket-score-app.vercel.app</a> · <a href="https://github.com/vamsishesamsetti/live-cricket-score-app">github.com/vamsishesamsetti/live-cricket-score-app</a></div>
+      <ul class="bullets">
+        <li>Integrated third-party REST API (CricAPI) with retry-based error handling, match classification utilities, and localStorage caching for persistent state.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Experience</div>
+    <div class="item">
+      <div class="item-header">
+        <div><span class="item-title">AWS Cloud Virtual Internship</span><span class="item-org"> | EduSkills (AICTE Approved)</span></div>
+        <span class="item-date">Mar – May 2022</span>
+      </div>
+      <ul class="bullets">
+        <li>Built and deployed serverless applications using AWS Lambda, S3, and DynamoDB.</li>
+        <li>Optimized cloud architecture for cost efficiency; implemented IAM-based least-privilege access controls.</li>
+      </ul>
+    </div>
+    <div class="item">
+      <div class="item-header">
+        <div><span class="item-title">RPA – Blue Prism Virtual Internship</span><span class="item-org"> | EduSkills (AICTE Approved)</span></div>
+        <span class="item-date">Oct – Dec 2021</span>
+      </div>
+      <ul class="bullets">
+        <li>Automated business workflows using Blue Prism, reducing manual processing time by 25%.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="item">
+      <div class="item-header">
+        <div><span class="item-title">M.S. in Computer Science</span><span class="item-org"> | Florida Atlantic University, Boca Raton, FL</span></div>
+        <span class="item-date">May 2026</span>
+      </div>
+      <div class="edu-gpa">GPA: 3.9 / 4.0</div>
+      <div class="edu-courses">Distributed Systems, Cloud Computing, Advanced Algorithms, Database Systems, Software Engineering</div>
+    </div>
+    <div class="item">
+      <div class="item-header">
+        <div><span class="item-title">B.Tech in Computer Science &amp; Engineering (Honors)</span><span class="item-org"> | KL University, India</span></div>
+        <span class="item-date">April 2024</span>
+      </div>
+      <div class="edu-gpa">CGPA: 8.91 / 10.0</div>
+    </div>
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <div class="section">
+    <div class="section-title">Certifications</div>
+    <ul class="bullets">
+      <li>AWS Certified Developer – Associate &nbsp;·&nbsp; AWS Certified Cloud Practitioner &nbsp;·&nbsp; Google Cloud Certified Associate Cloud Engineer &nbsp;·&nbsp; Red Hat Certified Developer EX183</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>
