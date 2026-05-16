@@ -55,6 +55,21 @@ export const projects = [
       'Backend on Render with Railway-managed MySQL; documented in Postman',
     ],
   },
+  {
+    title: 'AWS CI/CD Showcase',
+    description:
+      'Containerized Task Manager API with a full GitHub Actions CI/CD pipeline: automated testing, Docker build, ECR push, and EC2 deployment with IAM least-privilege.',
+    tech: ['Node.js', 'Express', 'DynamoDB', 'Docker', 'Amazon ECR', 'EC2', 'GitHub Actions', 'IAM'],
+    live: null,
+    github: 'https://github.com/vamsishesamsetti/aws-cicd-showcase',
+    accent: 'border-amber-500',
+    highlights: [
+      'GitHub Actions pipeline: lint → test → Docker build → push to ECR (git SHA tag) → SSH deploy to EC2',
+      'IAM least-privilege: GitHub Actions has ECR push-only; EC2 instance profile has ECR pull-only',
+      'Multi-stage Dockerfile with non-root user; CloudWatch log monitoring; 11 Jest tests in CI',
+      'DynamoDB tables with GSI on email; JWT auth, bcrypt, rate limiting',
+    ],
+  },
 ]
 
 export const skills = [
@@ -72,7 +87,7 @@ export const skills = [
   },
   {
     category: 'Cloud & DevOps',
-    items: ['AWS Lambda', 'AWS S3', 'EC2', 'DynamoDB', 'IAM / CloudWatch', 'GCP', 'Vercel', 'Render', 'Railway'],
+    items: ['AWS Lambda', 'AWS S3', 'EC2', 'DynamoDB', 'IAM / CloudWatch', 'GCP', 'Docker', 'GitHub Actions', 'Vercel', 'Render', 'Railway'],
   },
   {
     category: 'Languages',
