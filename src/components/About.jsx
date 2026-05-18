@@ -5,7 +5,7 @@ const stats = [
   { label: 'Cloud Certifications', value: '4' },
   { label: 'GPA', value: '3.9/4' },
   { label: 'Full-Stack Projects', value: '3+' },
-  { label: 'Graduating', value: 'May 2026' },
+  { label: 'Graduated', value: 'May 2026' },
 ]
 
 export default function About() {
