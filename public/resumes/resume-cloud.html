@@ -55,7 +55,8 @@
       +1 (728) 880-9390 <span>|</span>
       <a href="mailto:shesamsettivamsi11@gmail.com">shesamsettivamsi11@gmail.com</a> <span>|</span>
       <a href="https://linkedin.com/in/vamsishesamsetti">linkedin.com/in/vamsishesamsetti</a> <span>|</span>
-      <a href="https://github.com/vamsishesamsetti">github.com/vamsishesamsetti</a>
+      <a href="https://github.com/vamsishesamsetti">github.com/vamsishesamsetti</a> <span>|</span>
+      <a href="https://vamsishesamsetti.dev">vamsishesamsetti.dev</a>
     </div>
   </div>
 
@@ -124,6 +125,21 @@
   <!-- PROJECTS (cloud deployment focus) -->
   <div class="section">
     <div class="section-title">Projects – Cloud Architecture &amp; Deployment</div>
+
+    <div class="item">
+      <div class="item-header">
+        <div><span class="item-title">AWS CI/CD Showcase – Containerized Task Manager API</span></div>
+        <span class="item-date">2026</span>
+      </div>
+      <div class="item-tech">Node.js, Express, DynamoDB, Docker, Amazon ECR, EC2, GitHub Actions CI/CD, IAM, CloudWatch</div>
+      <div class="item-links"><a href="https://github.com/vamsishesamsetti/aws-cicd-showcase">github.com/vamsishesamsetti/aws-cicd-showcase</a></div>
+      <ul class="bullets">
+        <li>Architected a full CI/CD pipeline: GitHub Actions lint/test → Docker build → push to Amazon ECR (versioned by commit SHA) → SSH deploy to EC2 with health check verification.</li>
+        <li>Applied IAM least-privilege: GitHub Actions user has ECR push-only; EC2 instance profile has ECR pull-only — no wildcard permissions.</li>
+        <li>Multi-stage Dockerfile (non-root user, minimal attack surface); CloudWatch captures container stdout for centralized log monitoring.</li>
+        <li>DynamoDB tables (users + tasks) with GSI on email field; JWT auth, bcrypt, express-rate-limit — 11 automated tests in CI.</li>
+      </ul>
+    </div>
 
     <div class="item">
       <div class="item-header">
