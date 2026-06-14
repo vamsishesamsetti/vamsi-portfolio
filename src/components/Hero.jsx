@@ -1,7 +1,17 @@
+import { useState, useEffect } from 'react'
 import { personal } from '../data/portfolio'
 import { GithubIcon, LinkedinIcon, EmailIcon, DownloadIcon, ChevronDownIcon } from './Icons'
 
 export default function Hero() {
+  // Set on the client after hydration so the badge always reflects the current
+  // month. Starts empty to match the prerendered HTML (avoids a hydration mismatch).
+  const [currentMonth, setCurrentMonth] = useState('')
+  useEffect(() => {
+    setCurrentMonth(
+      new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' }),
+    )
+  }, [])
+
   return (
     <section
       id="hero"
@@ -11,7 +21,7 @@ export default function Hero() {
         {/* Availability badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-green-50 dark:bg-green-900/30 border border-green-200 dark:border-green-800 rounded-full text-green-700 dark:text-green-400 text-sm font-medium mb-8">
           <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-          Open to opportunities · May 2026
+          Open to opportunities{currentMonth ? ` · ${currentMonth}` : ''}
         </div>
 
         {/* Name */}
