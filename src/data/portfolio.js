@@ -32,7 +32,7 @@ export const projects = [
       'Real-time cricket scoring platform with live/upcoming/finished match filtering, custom React hooks, and production-grade UX.',
     tech: ['React (Vite)', 'Tailwind CSS', 'CricAPI', 'React Router', 'Vercel'],
     live: 'https://cricket-pulse-two.vercel.app',
-    github: 'https://github.com/vamsishesamsetti/live-cricket-score-app',
+    github: 'https://github.com/vamsishesamsetti/CricketPulse',
     accent: 'border-indigo-500',
     highlights: [
       'Custom hook (useMatchDetails) with utility-based match classification system',
@@ -46,7 +46,7 @@ export const projects = [
       'Secure REST API auction platform with AES-256 encrypted bid storage, transactional MySQL, and race condition prevention.',
     tech: ['Python', 'Flask', 'MySQL', 'JWT', 'AES-256', 'Railway', 'Render'],
     live: null,
-    github: 'https://github.com/vamsishesamsetti/smartbid-auction',
+    github: 'https://github.com/vamsishesamsetti/SmartBid',
     accent: 'border-emerald-500',
     highlights: [
       'AES-256 encrypted bid storage with JWT authentication and bcrypt',
