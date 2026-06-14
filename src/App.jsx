@@ -10,11 +10,18 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 function useTheme() {
-  const [dark, setDark] = useState(() => {
+  // Deterministic initial value so the server-rendered HTML matches the first
+  // client render (no hydration mismatch). The real preference is read in the
+  // effect below, after hydration.
+  const [dark, setDark] = useState(false)
+
+  useEffect(() => {
     const saved = localStorage.getItem('theme')
-    if (saved) return saved === 'dark'
-    return window.matchMedia('(prefers-color-scheme: dark)').matches
-  })
+    const initial = saved
+      ? saved === 'dark'
+      : window.matchMedia('(prefers-color-scheme: dark)').matches
+    setDark(initial)
+  }, [])
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', dark)
